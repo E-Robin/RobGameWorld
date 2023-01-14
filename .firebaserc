@@ -2,7 +2,7 @@
   "targets": {
     "rob-game-world": {
       "hosting": {
-        "navbarProject": [
+        "RobGameWorld": [
           "rob-game-world"
         ]
       }

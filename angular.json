@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "navbarProject": {
+    "RobGameWorld": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -69,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "navbarProject:build:production"
+              "browserTarget": "RobGameWorld:build:production"
             },
             "development": {
-              "browserTarget": "navbarProject:build:development"
+              "browserTarget": "RobGameWorld:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -80,7 +80,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "navbarProject:build"
+            "browserTarget": "RobGameWorld:build"
           }
         },
         "test": {
@@ -106,7 +106,7 @@
           "options": {
             "prerender": false,
             "ssr": false,
-            "browserTarget": "navbarProject:build:production",
+            "browserTarget": "RobGameWorld:build:production",
             "firebaseProject": "rob-game-world",
             "firebaseHostingSite": "rob-game-world"
           }
