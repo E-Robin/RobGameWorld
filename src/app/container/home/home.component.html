@@ -1,0 +1,36 @@
+<!-- <p>home works!</p> -->
+
+<div class="container-fluid" *ngIf="game$ | async as games ">
+    <div class="row">
+
+    
+        <div class="col-md-6  col-lg-4  col-sm-12 "  *ngFor=" let game of games.results"  >
+            <mat-card  >
+                <a  [routerLink]="['details', game.id]"  ><img   src="{{game.image_background}}" alt="" ></a>
+                
+                <!-- //it can also work like below route methods both works great rob -->
+                <!-- <img  routerLink="details/{{game.id}}" src="{{game.image_background}}" alt="" > -->
+                <!-- routerLink="details/{{game.id}}" -->
+                <hr>
+                <p>{{game.name | uppercase}} </p>
+            </mat-card>
+            
+        </div>
+ 
+        <!-- <div class="col-4">
+            <mat-card class="bg-primary" >
+                hello
+            </mat-card> 
+        </div>
+        <div class="col-4">
+            <mat-card class="bg-primary" >
+                hello
+            </mat-card> 
+        </div>
+        <div class="col-4">
+            <mat-card class="bg-primary" >
+                hello
+            </mat-card> 
+        </div> -->
+    </div>
+</div>

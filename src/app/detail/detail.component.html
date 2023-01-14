@@ -1,0 +1,12 @@
+<div   *ngIf="Detail$ | async as Detail" >
+    <div class="container">
+    <img src="{{Detail.image_background}}" alt="">
+    <div class="name">{{Detail.name | uppercase}}</div>
+    <div class="description">
+        
+            {{Detail.description ?? '' }}
+        
+    </div>
+    </div>
+
+</div>

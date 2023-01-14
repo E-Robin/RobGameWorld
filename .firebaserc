@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "rob-game-world": {
+      "hosting": {
+        "navbarProject": [
+          "rob-game-world"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "rob-game-world"
+  }
+}

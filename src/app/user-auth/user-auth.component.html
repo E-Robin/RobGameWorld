@@ -1,0 +1,44 @@
+
+<mat-toolbar class="bg-dark text-white center-center nav">
+    <p>The Gamer ROB ! Welcome to the world  </p>
+</mat-toolbar>
+<div class="container mt-5  ">
+    
+
+    <div class="signup" *ngIf="!isLoginForm" >
+        <form #signupForm="ngForm" (ngSubmit)="signup(signupForm.value)">
+            <div><h1>SignUp Form</h1></div>
+            <input type="text" placeholder="Name" name="name" ngModel #name="ngModel" required >
+            <!-- <p> <span ngIf="signupForm.controls.name.invalid" > Please enter the name</span> </p> -->
+            <!-- <span ngIf="(name.invalid && name.touched)" ></span> -->
+            <div  class="invalid-input" *ngIf="!name?.valid && (name?.touched)">
+                Invalid First Name
+             </div>
+            <input type="text" placeholder="Email" name="email"  ngModel required>
+            <div class="invalid-input"  *ngIf="!signupForm.controls['email']?.valid && signupForm.controls['email']?.touched" >
+                Invalid First Name
+             </div>
+            <input type="text" placeholder="Password" name="password" ngModel required > 
+            <button  [disabled]="signupForm.invalid" type="submit"> signup</button>
+            <div class="mt-3">
+            <p>Already account? &nbsp;<a (click)="toggleForm()" >Click here!</a></p>
+            </div>
+        </form>
+    </div>
+    <div class="login" *ngIf="isLoginForm">
+        <form #loginForm="ngForm" (ngSubmit)="login(loginForm.value)">
+            <div><h1>Login Form</h1></div>
+            <p class="invalid-input">{{authError}}</p>
+            <!-- <input type="text" placeholder="Name" name="name" ngModel > -->
+            <input type="text" placeholder="Email" name="email"  required ngModel>
+
+            <input required type="text" placeholder="Password" name="password" ngModel> 
+            <button  [disabled]="loginForm.invalid" type="submit"> login</button>
+            <div class="mt-3">
+                <p>Don't have account? &nbsp;<a (click)="toggleForm()" > Click to signup! </a> </p>
+            </div>
+            
+
+        </form>
+    </div> 
+</div>
