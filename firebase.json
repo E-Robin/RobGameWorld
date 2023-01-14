@@ -1,7 +1,7 @@
 {
   "hosting": {
     "target": "RobGameWorld",
-    "public": "dist/rob-game-world",
+    "public": "dist/RobGameWorld",
     "ignore": [
       "**/.*"
     ],
