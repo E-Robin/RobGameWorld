@@ -1,22 +1,31 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
 form{
     display: flex;
     flex-direction: column;
-    width: 25%;
+    width: 250px;
     margin: auto;
     text-align: center;
 }
 form h1{
-    color: blueviolet;
+    // color: blueviolet;
     font: 200;
 }
 
 a{
     cursor: pointer;
     text-decoration: underline;
-    color: blueviolet !important;
+    // color: blueviolet !important;
     
 }
 
+input{
+ padding: 5px;
+ margin-bottom: 5px;
+}
 
 // body{
 //     background: black;
@@ -26,4 +35,29 @@ a{
     display: flex;
     text-align: center;
     justify-content: center;
+    
+}
+
+mat-card{
+    box-shadow: 11px 16px 25px red !important;
+    width:fit-content;
+    // background-color: rgb(123, 205, 123);
+    background-color: rgb(123 205 197 / 0%);
+    margin: auto;
+    color: white;
+    // box-shadow: 5px 10px red;
+    
+    
+}
+
+.container{
+    background-color: black;
+    height: 100vh;
+    margin: 0px;
+    margin-right: 0px !important;
+    max-width: initial;
+}
+
+button{
+    cursor: pointer;
 }
