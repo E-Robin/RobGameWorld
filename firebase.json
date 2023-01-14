@@ -1,7 +1,7 @@
 {
   "hosting": {
-    "target": "navbarProject",
-    "public": "dist/navbar-project",
+    "target": "RobGameWorld",
+    "public": "dist/rob-game-world",
     "ignore": [
       "**/.*"
     ],
