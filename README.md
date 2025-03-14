@@ -1,3 +1,8 @@
+
+Click on this link to open the website
+https://rob-game-world.netlify.app/
+
+
 # NavbarProject
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.3.
